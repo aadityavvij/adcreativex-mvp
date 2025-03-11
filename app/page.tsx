@@ -5,7 +5,7 @@ import React from 'react';
 const HomePage = () => {
   const handleConnectFacebook = () => {
     const clientId = process.env.NEXT_PUBLIC_FACEBOOK_APP_ID;
-    const redirectUri = encodeURIComponent('http://localhost:3000/api/auth/facebook-callback');
+    const redirectUri = encodeURIComponent('https://adcreativex-mvp.vercel.app/api/auth/facebook-callback');
 
     const fbAuthUrl = `https://www.facebook.com/v18.0/dialog/oauth?client_id=${clientId}&redirect_uri=${redirectUri}&scope=ads_read,ads_management`;
 

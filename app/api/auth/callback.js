@@ -7,7 +7,7 @@ export default async function handler(req, res) {
   const params = {
     client_id: process.env.FACEBOOK_APP_ID,
     client_secret: process.env.FACEBOOK_APP_SECRET,
-    redirect_uri: 'http://localhost:3000/api/auth/callback',
+    redirect_uri: 'https://adcreativex-mvp.vercel.app/api/auth/callback',
     code,
   };
 

@@ -24,7 +24,8 @@ export async function GET(req: NextRequest) {
     const longLivedTokenData = await longLivedTokenResponse.json();
 
     // Here you should save the token in your DB - demo purpose we use cookie
-    const res = NextResponse.redirect('http://localhost:3000/dashboard');
+    const res = NextResponse.redirect('https://adcreativex-mvp.vercel.app/dashboard');
+    // const res = NextResponse.redirect('http://localhost:3000/dashboard');
 
     // You can also store token in a cookie/session
     res.cookies.set('fb_access_token', longLivedTokenData.access_token, {
